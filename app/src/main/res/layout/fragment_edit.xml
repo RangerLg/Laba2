@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".Profile" android:id="@+id/frameLayout">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        <EditText
+                android:text="Имя"
+                android:layout_width="match_parent"
+                android:layout_height="67dp" android:id="@+id/Name"/>
+        <EditText
+                android:text="Фамилия"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Sur"/>
+        <EditText
+                android:text="отчество"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" android:id="@+id/Pant"/>
+        <EditText
+                android:text="название вуза"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/NameU"/>
+        <EditText
+                android:text="факультет"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Fac"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/guideline2"/>
+        <EditText
+                android:text="курс"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/Course"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/editTextDate" android:minHeight="48dp" tools:ignore="SpeakableTextPresentCheck"/>
+        <Button
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Editbtn"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
